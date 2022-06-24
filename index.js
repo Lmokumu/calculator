@@ -1,19 +1,17 @@
-let num1 = parseFloat(window.prompt("Enter a number"));
-const operator = (prompt('Enter operator ( either +, -, * or / ): '))
-let num3 = window.prompt("enter another number")
+ const operator = prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');
 
-//let result = parseFloat(window.prompt("result"))
-document.write;
+ const num1 = parseFloat(prompt('Enter the first number: '));
+ const num2 = parseFloat(prompt('Enter the second number: '));
 
-if (operator == '+') {
-    result = number1 + number2;
-} else if (operator == '-') {
-    result = number1 - number2;
-} else if (operator == '*') {
-    result = number1 * number2;
-} else {
-    result = number1 / number2;
-}
+ let result;
+ if (operator == '+') {
+     result = num1 + num2;
+ } else if (operator == '-') {
+     result = num1 - num2;
+ } else if (operator == '*') {
+     result = num1 * num2;
+ } else {
+     result = num1 / num2;
+ }
 
-
-console.log(`${number1} ${operator} ${number2} = ${result}`);
+ window.alert(" Result is" + result);
